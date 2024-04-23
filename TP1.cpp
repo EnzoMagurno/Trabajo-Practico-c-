@@ -1,6 +1,35 @@
 #include <iostream>
 using namespace std;
 
+
+/*
+??Tipo de String: CHAR
+Los caracteres pueden escribirse de forma literal, encerrándolos entre comillas simples, o como número, usando el código asociado al carácter.
+char letra = 'A';
+char codigo = 65;
+
+??Funciones CHAR
+toupper('h') => 'H'
+tolower('H') => 'h'
+Si el carácter no es un una letra, no lo modifica.
+
+??Tipo compuesto: STRING
+string saludar = 'hola';
+para c++ es usar un char por cada elemento de un string => 'h' 'o' 'l' 'a'
+
+??Índice de cada carácter.
+'H O L A'
+ 0123456
+
+string var = 'hola'
+var.length() // 4
+
+cout<<var[var.length()-1];
+
+string cadena = 'El grillo salta';
+cadena.find(" "); // 2
+
+*/
 int main(){
 
     /* 1)
@@ -119,10 +148,6 @@ int main(){
   9)
 
   */
- std::queue<string> nombres;
- for (int i = 0; i <=3; i++){
-    cout<<"Ingrese un nombre: "<<endl;
- }
- cout<<nombres;
+ 
   return 0;
 }
