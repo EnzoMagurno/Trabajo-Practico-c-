@@ -1,6 +1,6 @@
 #include <iostream>
+#include <string>
 using namespace std;
-
 
 /*
 ??Tipo de String: CHAR
@@ -112,9 +112,23 @@ int main(){
         }
     cout<<"La suma de numeros ingresados es " << suma <<endl;
     */
-   
-   /*
+
+
+/*
    6)
+int num1 = 0;
+int num2 = 1;
+int siguiente = num1;
+int limite;
+cout<<"Limite: "<<endl;
+cin>>limite;
+for (int i = 0; i <= limite-2; i++){   
+siguiente = num1 + num2;
+num1 = num2;
+num2 = siguiente;
+cout<<siguiente<<endl;
+}
+--------------------------------------------
   int fib(int n){
     if(n<2) {
         return 0;
@@ -122,7 +136,8 @@ int main(){
     return fib(n-1)+fib(n-2);
   }
   cout<<fib(25)<<endl;
-   */
+  */
+
    /*
    7)
   int aprobados,desaprobados,alumno,nota=0;
@@ -145,9 +160,28 @@ int main(){
 
 
   /*
-  9)
+12)
+??FOR TRADICIONAL =>
+ string frase;
+ cout<<"Ingresa una frase: "<<endl;
+ getline(cin,frase);
 
-  */
- 
-  return 0;
+for (int i = 0; i < frase.length(); i++){
+if(frase[i]==' '){
+    cout<<endl;
+}else{
+    cout<<frase[i];
+}
+}
+
+??FOR CHAR =>
+for(char c: var){
+    if(c==' '){
+        cout<<endl;
+    }else{
+        cout<<c;
+    }
+}
+*/
+ return 0;
 }
