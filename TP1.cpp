@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <unordered_set>
 using namespace std;
 
 /*
@@ -30,7 +31,8 @@ string cadena = 'El grillo salta';
 cadena.find(" "); // 2
 
 */
-int main(){
+int main()
+{
 
     /* 1)
     int numero;
@@ -57,7 +59,7 @@ int main(){
     }
     */
 
-    /* 
+    /*
     3)
     int numero;
     cout << "Ingrese un numero entero" << endl;
@@ -113,53 +115,59 @@ int main(){
     cout<<"La suma de numeros ingresados es " << suma <<endl;
     */
 
-
-/*
-   6)
-int num1 = 0;
-int num2 = 1;
-int siguiente = num1;
-int limite;
-cout<<"Limite: "<<endl;
-cin>>limite;
-for (int i = 0; i <= limite-2; i++){   
-siguiente = num1 + num2;
-num1 = num2;
-num2 = siguiente;
-cout<<siguiente<<endl;
-}
---------------------------------------------
-  int fib(int n){
-    if(n<2) {
-        return 0;
+    /*
+       6)
+    int num1 = 0;
+    int num2 = 1;
+    int siguiente = num1;
+    int limite;
+    cout<<"Limite: "<<endl;
+    cin>>limite;
+    for (int i = 0; i <= limite-2; i++){
+    siguiente = num1 + num2;
+    num1 = num2;
+    num2 = siguiente;
+    cout<<siguiente<<endl;
     }
-    return fib(n-1)+fib(n-2);
-  }
-  cout<<fib(25)<<endl;
-  */
+    --------------------------------------------
+      int fib(int n){
+        if(n<2) {
+            return 0;
+        }
+        return fib(n-1)+fib(n-2);
+      }
+      cout<<fib(25)<<endl;
+      */
 
-   /*
-   7)
-  int aprobados,desaprobados,alumno,nota=0;
-  cout<<"Alumno: ";
-  cin>>alumno;
-  while (alumno!=0){
-    cout<<"Nota: ";
-    cin>>nota;
-    if(nota>4){
-        aprobados++
-    }else{
-        desaprobados++
-    }
-    cout<<"Alumno: ";
-    cin>>alumno
-  }
-  cout<<"Aprobados: "<<aprobados<<endl;
-  cout<<"Desaprobados: "<<desaprobados<<endl;
-   */  
+    /*
+    7)
+   int aprobados,desaprobados,alumno,nota=0;
+   cout<<"Alumno: ";
+   cin>>alumno;
+   while (alumno!=0){
+     cout<<"Nota: ";
+     cin>>nota;
+     if(nota>4){
+         aprobados++
+     }else{
+         desaprobados++
+     }
+     cout<<"Alumno: ";
+     cin>>alumno
+   }
+   cout<<"Aprobados: "<<aprobados<<endl;
+   cout<<"Desaprobados: "<<desaprobados<<endl;
+    */
+    /*
+    11)
 
+    string frase;
+    cout<<"Ingrese una frase para evaular: "<<endl;
+    getline(cin,frase);
+    cout<<frase;
+    */
 
-  /*
+    /*
 12)
 ??FOR TRADICIONAL =>
  string frase;
@@ -183,5 +191,25 @@ for(char c: var){
     }
 }
 */
- return 0;
+
+    /*
+    13)
+    string frase;
+    cout << "Ingrese una frase para evaular: " << endl;
+    getline(cin, frase);
+    unordered_set<char> vocales_mostradas;
+    for (int i = 0; i < frase.length(); i++)
+    {
+        char letra = frase[i];
+        if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
+        {
+            if (vocales_mostradas.find(letra) == vocales_mostradas.end())
+            {
+                cout << letra;
+                vocales_mostradas.insert(letra);
+            }
+        }
+    }
+    */
+    return 0;
 }
