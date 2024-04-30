@@ -226,8 +226,33 @@ for(char c: var){
         }
         cout<<"Numero: ";
         cin>>numero;
-
-    */
     }
+    */
+
+   /*
+   18)
+    1456220 % 10 = 145622,0
+  int numero, cincos=0;
+  cout<<"Numero: ";
+  cin>>numero;
+  while (numero>0){
+    int pares=0, impares=0;
+    while (numero!=0){
+        int digito = numero % 10;
+        numero/=10;
+        if(digito%2==0){
+            pares++;
+        }else{
+            impares++;
+            if(digito==5){
+                cincos++;
+            }
+        }
+    }
+   cout << "En total, el digito 5 aparecio " << cincos << " veces en los numeros ingresados.";
+   cout << "Pares: " << pares;
+   cout << "Impares: " << impares;
+  }
+   */
     return 0;
 }
