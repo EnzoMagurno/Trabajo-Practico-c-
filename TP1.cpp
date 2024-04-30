@@ -64,16 +64,13 @@ int main()
     int numero;
     cout << "Ingrese un numero entero" << endl;
     cin >> numero;
-    if (numero % 2 == 1)
-    {
-
+    if (numero % 2 == 1){
         for (int i = numero; i < (numero * 2); i++)
         {
             cout << i << endl;
         };
     }
-    else
-    {
+    else{
         for (int i = numero; i <= (numero * 2); i++)
         {
             cout << i << endl;
@@ -257,7 +254,7 @@ for(char c: var){
   
   /*
   18)
-
+  ??CON FRASE
  string frase;
  string fraseInvertida;
  cout << "Ingrese una frase: ";
@@ -266,6 +263,16 @@ for(char c: var){
     fraseInvertida += frase[i];
  }
  cout<<fraseInvertida;
+
+  ??CON PALABRA
+ string palabra;
+ cout << "Ingrese una palabra: ";
+ cin>>palabra;
+ string palabraInvertida;
+ for (int i = palabra.length()-1; i < palabra.length(); i--){
+    palabraInvertida += palabra[i];
+ }
+ cout<<palabraInvertida;
   */
     return 0;
 }
