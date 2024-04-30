@@ -194,22 +194,40 @@ for(char c: var){
 
     /*
     13)
-    string frase;
-    cout << "Ingrese una frase para evaular: " << endl;
-    getline(cin, frase);
-    unordered_set<char> vocales_mostradas;
-    for (int i = 0; i < frase.length(); i++)
-    {
-        char letra = frase[i];
-        if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
+        string frase;
+        cout << "Ingrese una frase para evaular: " << endl;
+        getline(cin, frase);
+        unordered_set<char> vocales_mostradas;
+        for (int i = 0; i < frase.length(); i++)
         {
-            if (vocales_mostradas.find(letra) == vocales_mostradas.end())
+            char letra = frase[i];
+            if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u')
             {
-                cout << letra;
-                vocales_mostradas.insert(letra);
+                if (vocales_mostradas.find(letra) == vocales_mostradas.end())
+                {
+                    cout << letra;
+                    vocales_mostradas.insert(letra);
+                }
             }
         }
-    }
     */
+
+    /*
+    14)
+    int suma = 0;
+    int numero;
+    cout << "Numero: ";
+    cin >> numero;
+    while (numero > 0){
+        while (numero != 0){
+            int digito = numero % 10;
+            suma += digito;
+            numero = numero / 10;
+        }
+        cout<<"Numero: ";
+        cin>>numero;
+
+    */
+    }
     return 0;
 }
