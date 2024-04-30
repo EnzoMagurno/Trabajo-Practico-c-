@@ -230,7 +230,7 @@ for(char c: var){
     */
 
    /*
-   18)
+   17)
     1456220 % 10 = 145622,0
   int numero, cincos=0;
   cout<<"Numero: ";
@@ -254,5 +254,18 @@ for(char c: var){
    cout << "Impares: " << impares;
   }
    */
+  
+  /*
+  18)
+
+ string frase;
+ string fraseInvertida;
+ cout << "Ingrese una frase: ";
+ getline(cin,frase);
+ for (int i = frase.length()-1; i < frase.length(); i--){
+    fraseInvertida += frase[i];
+ }
+ cout<<fraseInvertida;
+  */
     return 0;
 }
