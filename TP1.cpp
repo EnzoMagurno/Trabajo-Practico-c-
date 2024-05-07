@@ -274,5 +274,37 @@ for(char c: var){
  }
  cout<<palabraInvertida;
   */
+
+/*
+ Ejercicio parcial:
+
+int cobro = 0;
+    int pago = 0;
+    int a = 0;
+    int justo = 0;
+    int mayor = 0;
+    cout<<"Ingrese el monto a cobrar: ";
+    cin>>cobro;
+    while(cobro>0){
+        cout<<"Ingrese el pago: ";
+        cin>>pago;
+        a = pago - cobro;
+        mayor = cobro;
+        if(a > 0){
+            cout<<"Su vuelto es de: "<<a<<endl;
+        }else if(a == 0){
+            justo++;
+        }else{
+            cout<<"No te alcanza"<<endl;
+        }
+        cout<<"Ingrese el monto a cobrar: ";
+        cin>>cobro;
+        if(cobro > mayor && a >= 0){
+            mayor = cobro;
+        }
+    }
+    cout<<"El mayor monto fue de: "<<mayor<<endl;
+    cout<<"Se pago con lo justo: "<<justo;
+*/
     return 0;
 }
